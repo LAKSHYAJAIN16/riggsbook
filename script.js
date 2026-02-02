@@ -32,7 +32,7 @@ let quotes = [
         text: "I spend a lot of time with women from age 25-30", 
         author: "Mr. Riggs",
         date: '2026-02-02T11:45:00',
-        category: 'based',
+        category: 'comedy',
         tags: ['comedy']
     },
     { 
@@ -40,7 +40,7 @@ let quotes = [
         text: "I like Dilbert. I don't care that he got cancelled", 
         author: "Mr. Riggs",
         date: '2026-02-02T09:15:00',
-        category: 'comedy',
+        category: 'based',
         tags: ['based']
     },
     { 
