@@ -217,7 +217,7 @@ textarea:focus {
     border-left-color: #ff69b4;
 }
 
-.quote-card[data-category="other"] {
+.quote-card[data-category="based"] {
     background-color: #f0fff0;
     border-left-color: #2e8b57;
 }

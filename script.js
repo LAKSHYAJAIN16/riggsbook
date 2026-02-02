@@ -15,7 +15,7 @@ function formatDate(dateString) {
 }
 
 // Available categories
-const categories = ['all', 'wisdom', 'other', 'comedy'];
+const categories = ['all', 'wisdom', 'based', 'comedy'];
 
 // Sample quotes data with dates and categories
 let quotes = [
@@ -32,7 +32,7 @@ let quotes = [
         text: "I spend a lot of time with women from age 25-30", 
         author: "Mr. Riggs",
         date: '2026-02-02T11:45:00',
-        category: 'other',
+        category: 'based',
         tags: ['comedy']
     },
     { 
@@ -41,7 +41,7 @@ let quotes = [
         author: "Mr. Riggs",
         date: '2026-02-02T09:15:00',
         category: 'comedy',
-        tags: ['comedy']
+        tags: ['based']
     },
     { 
         id: 4,

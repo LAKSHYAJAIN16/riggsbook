@@ -118,7 +118,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const quoteText = urlParams.get('text');
         const quoteDate = urlParams.get('date');
-        const quoteCategory = urlParams.get('category') || 'other';
+        const quoteCategory = urlParams.get('category') || 'based';
 
         const decodedText = quoteText ? decodeURIComponent(quoteText) : '';
 
