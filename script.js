@@ -158,7 +158,7 @@ function showExpandedView(quote) {
     // Encode the quote text and date for URL
     const encodedText = encodeURIComponent(quote.text);
     const encodedDate = encodeURIComponent(quote.date);
-    const encodedCategory = encodeURIComponent(quote.category || 'other');
+    const encodedCategory = encodeURIComponent(quote.category || 'based');
     
     // Navigate to the quote page with the quote data as URL parameters
     window.location.href = `quote.html?id=${quote.id}&text=${encodedText}&date=${encodedDate}&category=${encodedCategory}`;
