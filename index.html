@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Riggs' Quotebook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Riggsbook</h1>
+            <p class="subtitle">A collection of Mr. Riggs's best quotes</p>
+        </header>
+
+        <main>
+            <div class="quotes-container">
+                <div class="filters">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search quotes..." class="search-input">
+                        <button id="clearSearch" class="btn btn-secondary">Clear</button>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="categoryFilter">Category:</label>
+                        <select id="categoryFilter" class="filter-select">
+                            <option value="all">All Categories</option>
+                            <option value="wisdom">Wisdom</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy" class="filter-select">
+                            <option value="date-desc">Newest First</option>
+                            <option value="date-asc">Oldest First</option>
+                            <option value="a-z">A to Z</option>
+                            <option value="z-a">Z to A</option>
+                        </select>
+                    </div>
+                <div id="quotesList" class="quotes-list">
+                    <!-- Quotes will be dynamically inserted here -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Mr. Riggs' Quotebook</p>
+        </footer>
+    </div>
+
+    <!-- Quote Template (hidden) -->
+    <template id="quoteTemplate">
+        <div class="quote-card">
+            <div class="quote-content"></div>
+            <div class="quote-footer">
+                <div class="quote-author"></div>
+                <div class="quote-date"></div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Expanded Quote View -->
+    <div id="expandedQuote" class="quote-expanded">
+        <div class="quote-expanded-content">
+            <button class="close-expanded" aria-label="Close">&times;</button>
+            <div class="quote-content"></div>
+            <div class="quote-footer">
+                <div class="quote-author"></div>
+                <div class="quote-date"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
