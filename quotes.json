@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "text": "Jake Paul is not a good role model, guys",
+        "author": "Mr. Riggs",
+        "date": "2026-02-02T10:30:00",
+        "category": "wisdom",
+        "tags": ["wisdom"],
+        "additionalComments": ""
+    },
+    {
+        "id": 2,
+        "text": "I spend a lot of time with women from age 25-30",
+        "author": "Mr. Riggs",
+        "date": "2026-02-02T11:45:00",
+        "category": "comedy",
+        "tags": ["comedy"],
+        "additionalComments": ""
+    },
+    {
+        "id": 3,
+        "text": "I like Dilbert. I don't care that he got cancelled",
+        "author": "Mr. Riggs",
+        "date": "2026-02-02T09:15:00",
+        "category": "based",
+        "tags": ["based"],
+        "additionalComments": ""
+    },
+    {
+        "id": 4,
+        "text": "To appear tall, surround yourself with short people",
+        "author": "Mr. Riggs",
+        "date": "2026-02-02T09:15:00",
+        "category": "wisdom",
+        "tags": ["wisdom"],
+        "additionalComments": ""
+    },
+    {
+        "id": 5,
+        "text": "If you think about it, aren't most stereotypes accurate? I mean, there's a reason they exist.",
+        "author": "Mr. Riggs",
+        "date": "2026-02-02T09:15:00",
+        "category": "based",
+        "tags": ["based"],
+        "additionalComments": ""
+    },
+    {
+        "id": 6,
+        "text": "Your age group doesn't vote, thank you. Thank you for your money.",
+        "author": "Mr. Riggs",
+        "date": "2026-02-03T09:15:00",
+        "category": "based",
+        "tags": ["based"],
+        "additionalComments": ""
+    },
+    {
+        "id": 7,
+        "text": "Don't be a useful idiot. Basically, just don't be american.",
+        "author": "Mr. Riggs",
+        "date": "2026-02-03T09:15:00",
+        "category": "wisdom",
+        "tags": ["wisdom"],
+        "additionalComments": ""
+    },
+    {
+        "id": 8,
+        "text": "Too bad. You should've picked better parents",
+        "author": "Mr. Riggs",
+        "date": "2026-02-03T09:15:00",
+        "category": "based",
+        "tags": ["based"],
+        "additionalComments": "NOTE: This is sort of taken out of context for comedic effect. Mr. Riggs said this while he was criticizing libertarianism"
+    },
+    {
+        "id": 9,
+        "text": "If your friends in college start talking about Ayn Rand, you're in a right wing cult. Get out of there.",
+        "author": "Mr. Riggs",
+        "date": "2026-02-03T09:15:00",
+        "category": "based",
+        "tags": ["based"],
+        "additionalComments": ""
+    },
+    {
+        "id": 10,
+        "text": "Ladies, 'You can't always get what you want'. Guys, you can't either.",
+        "author": "Mr. Riggs",
+        "date": "2026-02-03T09:15:00",
+        "category": "comedy",
+        "tags": ["comedy"],
+        "additionalComments": ""
+    },
+    {
+        "id": 11,
+        "text": "The curriculum is extremely biased towards one direction. They expect me to teach german socialism and not mention Milton Friedman.",
+        "author": "Mr. Riggs",
+        "date": "2026-02-03T09:15:00",
+        "category": "based",
+        "tags": ["based"],
+        "additionalComments": ""
+    },
+    {
+        "id": 12,
+        "text": "Thomas Sowell drives lefties crazy, because he's black. So they just don't know what to do with him.",
+        "author": "Mr. Riggs",
+        "date": "2026-02-03T09:15:00",
+        "category": "based",
+        "tags": ["based"],
+        "additionalComments": ""
+    }
+]
