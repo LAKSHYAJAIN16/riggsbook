@@ -14,6 +14,29 @@
         <header>
             <h1>The Riggsbook</h1>
             <p class="subtitle">A collection of Mr. Riggs' best quotes</p>
+            <div class="mention-counters">
+                <div class="counter-card">
+                    <img src="winston.png" alt="Winston Churchill" class="person-photo">
+                    <div class="counter-info">
+                        <span class="person-name">Winston Churchill</span>
+                        <span class="mention-count">Mentions: <span id="churchillCount" class="count">4</span></span>
+                    </div>
+                </div>
+                <div class="counter-card">
+                    <img src="thomas.jpg" alt="Thomas Sowell" class="person-photo">
+                    <div class="counter-info">
+                        <span class="person-name">Thomas Sowell</span>
+                        <span class="mention-count">Mentions: <span id="sowellCount" class="count">3</span></span>
+                    </div>
+                </div>
+                <div class="counter-card">
+                    <img src="milton.jpg" alt="Milton Friedman" class="person-photo">
+                    <div class="counter-info">
+                        <span class="person-name">Milton Friedman</span>
+                        <span class="mention-count">Mentions: <span id="friedmanCount" class="count">4</span></span>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <main>
@@ -65,17 +88,6 @@
         </div>
     </template>
 
-    <!-- Expanded Quote View -->
-    <div id="expandedQuote" class="quote-expanded">
-        <div class="quote-expanded-content">
-            <button class="close-expanded" aria-label="Close">&times;</button>
-            <div class="quote-content"></div>
-            <div class="quote-footer">
-                <div class="quote-author"></div>
-                <div class="quote-date"></div>
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

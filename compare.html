@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Quotes - Riggsbook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .comparison-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            min-height: 60vh;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .quote-option {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .quote-option:hover {
+            transform: scale(1.02);
+        }
+        .comparison-card {
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .vs {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #666;
+            padding: 0 20px;
+        }
+        .select-btn {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            background-color: #4a6fa5;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .select-btn:hover {
+            background-color: #3a5a80;
+            transform: translateY(-2px);
+        }
+        .quote-category {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        .category-wisdom {
+            background-color: #e3f2fd;
+            color: #1565c0;
+        }
+        .category-comedy {
+            background-color: #f3e5f5;
+            color: #7b1fa2;
+        }
+        .category-based {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        @media (max-width: 768px) {
+            .comparison-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .vs {
+                padding: 20px 0;
+                transform: rotate(90deg);
+            }
+        }
+        #leaderboard {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #loadingIndicator {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Riggsbook Faceoff</h1>
+            <p class="subtitle">Which quote is better? Click to choose!</p>
+        </header>
+
+        <main>
+            <div class="comparison-container">
+                <div class="quote-option" id="quoteOption1">
+                    <div class="quote-card comparison-card">
+                        <div class="quote-content">Loading quote...</div>
+                        <div class="quote-footer">
+                            <div class="quote-author"></div>
+                            <div class="quote-category"></div>
+                        </div>
+                    </div>
+                    <button class="select-btn" data-quote-id="">Choose This One</button>
+                </div>
+                
+                <div class="vs">VS</div>
+                
+                <div id="loadingIndicator">
+                    <div style="display: inline-block; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        Loading next pair...
+                    </div>
+                </div>
+                
+                <div class="quote-option" id="quoteOption2">
+                    <div class="quote-card comparison-card">
+                        <div class="quote-content">Loading quote...</div>
+                        <div class="quote-footer">
+                            <div class="quote-author"></div>
+                            <div class="quote-category"></div>
+                        </div>
+                    </div>
+                    <button class="select-btn" data-quote-id="">Choose This One</button>
+                </div>
+            </div>
+            
+            <div class="results" style="margin-top: 40px;">
+                <h2 style="text-align: center; margin-bottom: 20px;">Leaderboard</h2>
+                <div id="leaderboard"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2026 Riggsbook | <a href="index.html">Back to all quotes</a></p>
+        </footer>
+    </div>
+
+    <script src="compare.js"></script>
+</body>
+</html>

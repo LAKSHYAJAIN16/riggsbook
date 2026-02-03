@@ -47,6 +47,63 @@ h1 {
 .subtitle {
     color: var(--secondary-color);
     font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.mention-counters {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.counter-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e1e4e8;
+}
+
+.counter-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.person-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid var(--primary-color);
+}
+
+.counter-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.person-name {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.mention-count {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.count {
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 1.1rem;
 }
 
 .quote-form {
@@ -306,12 +363,41 @@ footer {
         padding: 10px;
     }
     
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .mention-counters {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .counter-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .person-photo {
+        width: 50px;
+        height: 50px;
+    }
+    
     .quotes-list {
         grid-template-columns: 1fr;
     }
     
     .filters {
         flex-direction: column;
+    }
+    
+    .search-container,
+    .filter-group {
+        display: none;
     }
     
     .btn-secondary {
@@ -321,6 +407,62 @@ footer {
     
     .search-input {
         border-radius: var(--border-radius);
+        margin-bottom: 10px;
+    }
+    
+    .quote-card {
+        padding: 20px;
+    }
+    
+    .quote-content {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .counter-card {
+        padding: 12px 15px;
+    }
+    
+    .person-photo {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .person-name {
+        font-size: 0.9rem;
+    }
+    
+    .mention-count {
+        font-size: 0.8rem;
+    }
+    
+    .count {
+        font-size: 1rem;
+    }
+    
+    .quote-card {
+        padding: 15px;
+    }
+    
+    .quote-content {
+        font-size: 1rem;
+    }
+    
+    .quote-author {
+        font-size: 0.9rem;
+    }
+    
+    .quote-date {
+        font-size: 0.8rem;
     }
 }
 
