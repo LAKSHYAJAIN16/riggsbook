@@ -80,7 +80,7 @@ let quotes = [
     },
     {
         id: 8,
-        text: "Some people will just say, too bad. You should've picked better parents",
+        text: "Too bad. You should've picked better parents",
         author: "Mr. Riggs",
         date: '2026-02-03T09:15:00',
         category: 'based',
@@ -89,6 +89,30 @@ let quotes = [
     {
         id: 9,
         text: "If your friends in college start talking about Ayn Rand, you're in a right wing cult. Get out of there.",
+        author: "Mr. Riggs",
+        date: '2026-02-03T09:15:00',
+        category: 'based',
+        tags: ['based']
+    },
+    {
+        id: 10,
+        text: "Ladies, 'You can't always get what you want'. Guys, you can't either.",
+        author: "Mr. Riggs",
+        date: '2026-02-03T09:15:00',
+        category: 'comedy',
+        tags: ['comedy']
+    },
+    {
+        id: 11, 
+        text: "The curriculum is extremely biased towards one direction. They expect me to teach german socialism and not mention Milton Friedman.",
+        author: "Mr. Riggs",
+        date: '2026-02-03T09:15:00',
+        category: 'based',
+        tags: ['based']
+    },
+    {
+        id: 12,
+        text: "Thomas Sowell drives lefties crazy, because he's black. So they just don't know what to do with him.",
         author: "Mr. Riggs",
         date: '2026-02-03T09:15:00',
         category: 'based',
