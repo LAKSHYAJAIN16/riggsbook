@@ -196,7 +196,7 @@ textarea:focus {
 .filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 16px;
     margin-bottom: 20px;
     align-items: flex-end;
 }
